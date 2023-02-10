@@ -87,6 +87,9 @@ ul {
 li {
     list-style: none;
 }
+.logo_image{
+    width: 92px;
+}
 input,
 select,
 button {
