@@ -465,42 +465,25 @@ Author:   Webstrot
 
                 <!-- slider start -->
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 sw_spectrm_padding">
-                    <div class="best_product_slider_wrapper">
+                    <div class="best_product_slider_wrapper wanna_change">
                         <div class="owl-carousel owl-theme">
                             {% for i in products %}
                                 <div class="item">
                                     <div class="sw_product_box_wrapper">
                                         <div class="sw_product_indx_img_wrapper">
 
-                                            <img src="/{{i.image}}" alt="shop_img" class="img-responsive" />
+                                            <img src="/{{i.image}}" alt="shop_img" class="img-responsive img-change" />
                                         </div>
 
                                         <div class="sw_product_indx_img_cont_wrapper">
                                             <div class="sw_pdct_img">
-                                                <img src="{% static 'images/line.png' %}" alt="img" />
+                                                <img src="{% static 'images/line.png' %}" alt="img" width="200px" height="100px"/>
                                             </div>
-                                            <h5>$ {{ i.price }}</h5>
                                             <h1><a href="javascript:;">{{ i.title }}</a></h1>
 
                                             <div class="cc_li_cont_wrapper">
-                                                {% comment %} {% for i in products.rating|times %}
-                                                    <i class="fa fa-star"></i>
-                                                {% endfor %} {% endcomment %}
-                                                {% comment %} <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i> {% endcomment %}
                                             </div>
-                                            <div class="cc_li_img_overlay">
-                                                <div class="cc_li_img_text">
-                                                    <ul>
-                                                        <li><a href="javascript:;"><i class="fa fa-shopping-cart"></i></a></li>
-                                                        <li><a href="javascript:;"><i class="fa fa-heart"></i></a></li>
-
-                                                        <li><a href="javascript:;"><i class="fa fa-expand"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                      
                                         </div>
                                     </div>
                                 </div>
@@ -599,19 +582,17 @@ Author:   Webstrot
     <!-- sw pricing section start-->
     <div class="sw_pricing_wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row" id="services">
                 <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 col-lg-offset-3">
                     <div class="sw_left_heading_wraper sw_center_heading_wrapper pd_0">
-                        <h1>Affordable Pricing Packages</h1>
-                        <img src="{% static '' %}images/heading_line.png" alt="title">
-                        <p>Donec quis magna sit amet risus vulputate maximus eget eget arcu. Praesent sed molestie tortor. </p>
+                        <h1>Servislarimiz</h1>
                     </div>
                 </div>
 
                 <div class="pricing_box1_wrapper">
                     <div class="box1_heading_wrapper box1_orange">
 
-                        <h1><sup>$</sup>75<span> /  month</span></h1>
+                        <h1><sup></sup>25 000<span>so'm / oyiga</span></h1>
                         <div class="jp_pricing_label_wrapper">
 
                         </div>
@@ -629,12 +610,10 @@ Author:   Webstrot
 
                         <div class="pricing_btm_txt_wrapper txt_clr_oange">
                             <div class="pricing_cont">
-                                <p>Battery Capacity 11 - 15 kWh</p>
+                                {% comment %} <p>Battery Capacity 11 - 15 kWh</p> {% endcomment %}
                                 <ul>
-                                    <li> free service</li>
-                                    <li>ranted battery</li>
-                                    <li>free installation</li>
-                                    <li>24 hour support</li>
+                                    <li> Tozalov tizimi</li>
+                                    <li> 24/7 yordam</li>
 
                                 </ul>
                             </div>
@@ -647,7 +626,7 @@ Author:   Webstrot
                 <div class="pricing_box1_wrapper sw_pricing_box_transition">
                     <div class="box1_heading_wrapper box1_blue">
 
-                        <h1><sup>$</sup>95<span> /  month</span></h1>
+                        <h1><sup></sup>50 0000<span> so'm / oyiga</span></h1>
                         <div class="jp_pricing_label_wrapper jp_pricing_label_blue">
 
                         </div>
@@ -664,12 +643,10 @@ Author:   Webstrot
 
                         <div class="pricing_btm_txt_wrapper txt_clr_blue">
                             <div class="pricing_cont">
-                                <p>Battery Capacity 16 - 20 kWh</p>
                                 <ul>
-                                    <li> free service</li>
-                                    <li>ranted battery</li>
-                                    <li>free installation</li>
-                                    <li>24 hour support</li>
+                                    <li> Tozalash</li>
+                                    <li> Batareyalarni tekshirish</li>
+                                    <li> 24/7 yordam</li>
 
                                 </ul>
                             </div>
@@ -682,7 +659,7 @@ Author:   Webstrot
                 <div class="pricing_box1_wrapper padder_btm_0">
                     <div class="box1_heading_wrapper box1_green">
 
-                        <h1><sup>$</sup>125<span> /  month</span></h1>
+                        <h1><sup></sup>75 000<span> so'm / oyiga</span></h1>
                         <div class="jp_pricing_label_wrapper jp_pricing_label_green">
 
                         </div>
@@ -700,12 +677,10 @@ Author:   Webstrot
 
                         <div class="pricing_btm_txt_wrapper txt_clr_green">
                             <div class="pricing_cont">
-                                <p>Battery Capacity all kWh</p>
                                 <ul>
-                                    <li> free service</li>
-                                    <li>ranted battery</li>
-                                    <li>free installation</li>
-                                    <li>24 hour support</li>
+                                    <li>Tozalash har haftada</li>
+                                    <li>Batareyalarni kafolat</li>
+                                    <li>24/7 yordam</li>
 
                                 </ul>
                             </div>
