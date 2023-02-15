@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)hsk#)i6bwy2p7rc4nh@h!)i!$e2lno8&#6aif%!kx_!7p-keg
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://inmgreenenergy.uz', 'http://127.0.0.1:8000']
 
 # Application definition
 
